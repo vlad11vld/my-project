@@ -1,0 +1,30 @@
+.filters {
+  height: 40px;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 39, 125, 1) 20%,
+    rgba(0, 134, 255, 1) 85%
+  );
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  div {
+    margin-left: 20px;
+    width: 15%;
+    height: fit-content;
+    p {
+      height: fit-content;
+      margin: 0;
+      color: white;
+    }
+  }
+}
+.filters {
+  div {
+    a {
+      color: white;
+    }
+  }
+}

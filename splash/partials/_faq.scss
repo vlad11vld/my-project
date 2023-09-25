@@ -1,0 +1,110 @@
+.faq {
+  margin-bottom: $margin-section;
+  h2 {
+    font-size: 40px;
+    font-weight: 300;
+  }
+  div {
+    div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid rgb(230, 229, 229);
+      border-radius: 50px;
+      margin-bottom: 15px;
+      cursor: pointer;
+      padding: 10px 5px;
+
+      h3 {
+        margin: 0;
+        color: black;
+        padding: 10px;
+        border-radius: 20px;
+        font-weight: 300;
+      }
+      button {
+        font-size: 20px;
+        background-color: white;
+        border: 0;
+        padding: 0;
+        margin-right: 20px;
+        border-radius: 50%;
+        height: fit-content;
+      }
+    }
+    p {
+      margin-top: 20px;
+      margin-left: 10px;
+      display: none;
+      font-size: 20px;
+      color: rgb(132, 132, 132);
+    }
+
+    .boxShadow {
+      -webkit-box-shadow: -8px 9px 132px -28px rgb(0, 0, 0);
+      -moz-box-shadow: -8px 9px 132px -28px rgb(0, 0, 0);
+      box-shadow: -5px 15px 15px rgba(131, 131, 131, 0.575) !important;
+      border: none;
+    }
+    .flipAnim {
+      animation: flip 0.5s;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes flip {
+      from {
+      }
+      to {
+        transform: rotateX(180deg);
+      }
+    }
+    .heightAnim {
+      animation: height 0.5s;
+      animation-fill-mode: forwards;
+    }
+    .flipAnim2 {
+      animation: flip2 0.5s;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes flip2 {
+      from {
+        transform: rotateX(180deg);
+      }
+      to {
+        transform: rotateX(0deg);
+      }
+    }
+    .heightAnim {
+      animation: height 0.5s;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes height {
+      from {
+        height: 0px;
+        color: white;
+      }
+      to {
+        height: 50px;
+        color: rgb(169, 169, 169);
+      }
+    }
+  }
+  .heightAnim2 {
+    animation: height2 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes height2 {
+    from {
+      height: 50px;
+    }
+    to {
+      height: 0px;
+      color: white;
+      margin: 0;
+      opacity: 0%;
+    }
+  }
+}

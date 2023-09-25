@@ -1,0 +1,193 @@
+.logSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  background-image: url(/splash/img/frunzback.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .logInBox {
+    height: fit-content;
+
+    width: 40%;
+    background-color: white;
+    border-radius: 20px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    animation: heightL 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 85%;
+
+    .blueLog {
+      width: 30%;
+      height: auto;
+      background-color: rgb(36, 194, 252);
+      border-radius: 20px 15px 15px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      cursor: pointer;
+      p {
+        opacity: 0%;
+        animation: opacL 0.5s;
+        animation-delay: 0.3s;
+        animation-fill-mode: forwards;
+      }
+    }
+    .rightBoxL {
+      width: 50%;
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      font-family: "Courier New", monospace;
+      animation: opacL 0.5s;
+      animation-delay: 0.5s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+
+      h2 {
+        font-size: 50px;
+        color: rgb(4, 2, 52);
+        font-weight: 200;
+      }
+      input {
+        width: 100%;
+        margin-bottom: 20px;
+        height: 30px;
+        border: 2px solid black;
+        border-radius: 56px 56px 56px 0px;
+        padding: 10px;
+      }
+      p {
+        font-size: 18px;
+        margin-bottom: -5px;
+        color: black;
+      }
+      button {
+        width: 100px;
+        margin: 0;
+        margin-top: 10px;
+      }
+    }
+  }
+  .signUpBox {
+    height: fit-content;
+
+    width: 40%;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    animation: heightL 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 85%;
+    position: absolute;
+    display: none;
+    .orangeLog {
+      cursor: pointer;
+      width: 30%;
+      height: auto;
+      background-color: rgb(21, 255, 0);
+      border-radius: 20px 15px 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      p {
+        opacity: 0%;
+        animation: opacL 0.5s;
+        animation-delay: 0.3s;
+        animation-fill-mode: forwards;
+      }
+    }
+    .rightBox {
+      width: 50%;
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+
+      font-family: "Courier New", monospace;
+      animation: opacL 0.5s;
+      animation-delay: 0.3s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+
+      h2 {
+        font-size: 50px;
+        color: rgb(4, 2, 52);
+        font-weight: 200;
+      }
+      input {
+        width: 100%;
+        margin-bottom: 10px;
+        height: 30px;
+        border: 2px solid black;
+        border-radius: 56px 56px 56px 0px;
+        padding: 10px;
+      }
+      p {
+        font-size: 18px;
+        margin: 0;
+        color: black;
+      }
+      button {
+        width: 100px;
+        margin: 0;
+        margin-top: 10px;
+      }
+    }
+  }
+  @keyframes heightL {
+    from {
+      height: 0px;
+    }
+    to {
+      height: 400px;
+    }
+  }
+  @keyframes opacL {
+    from {
+      opacity: 0%;
+    }
+    to {
+      opacity: 100%;
+    }
+  }
+  .anim10 {
+    animation: heightL2 3s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes heightL2 {
+    from {
+      height: 400px;
+    }
+    to {
+      height: 0px;
+    }
+  }
+  .hed {
+    display: none;
+  }
+  .acc {
+    display: none;
+  }
+  .homepg {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    color: rgb(35, 98, 137);
+  }
+  .homepg:hover {
+    a {
+      color: rgb(60, 232, 48);
+    }
+  }
+}

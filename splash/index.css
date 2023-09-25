@@ -1,0 +1,1386 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: "MyWebFont";
+  src: url("../fonts/MyWebFont-regular.eot"), url("../fonts/MyWebFont-regular.svg"), url("../fonts/MyWebFont-regular.ttf"), url("../fonts/MyWebFont-regular.woff"), url("../fonts/MyWebFont-regular.woff2");
+}
+@font-face {
+  font-family: "MyWebFont";
+  src: url("../fonts/MyWebFont-bold.eot"), url("../fonts/MyWebFont-bold.svg"), url("../fonts/MyWebFont-bold.ttf"), url("../fonts/MyWebFont-bold.woff"), url("../fonts/MyWebFont-bold.woff2");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "MyWebFont";
+  src: url("../fonts/MyWebFont-italic.eot"), url("../fonts/MyWebFont-italic.svg"), url("../fonts/MyWebFont-italic.ttf"), url("../fonts/MyWebFont-italic.woff"), url("../fonts/MyWebFont-italic.woff2");
+  font-style: italic;
+}
+@font-face {
+  font-family: "MyWebFont";
+  src: url("../fonts/MyWebFont-bold-italic.eot"), url("../fonts/MyWebFont-bold-italic.svg"), url("../fonts/MyWebFont-bold-italic.ttf"), url("../fonts/MyWebFont-bold-italic.woff"), url("../fonts/MyWebFont-bold-italic.woff2");
+  font-weight: bold;
+  font-style: italic;
+}
+input[disabled] {
+  opacity: 0.2;
+}
+
+body {
+  color: #2200ff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  line-height: 1.2;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+}
+body h1 *,
+body h2 *,
+body h3 *,
+body h4 *,
+body h5 *,
+body h6 * {
+  font-size: inherit;
+  line-height: inherit;
+}
+body p {
+  font-weight: normal;
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+@media (max-width: 768px) {
+  body p {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+}
+body h1 {
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 28px;
+}
+@media (max-width: 768px) {
+  body h1 {
+    font-size: 26px;
+    margin-bottom: 22px;
+  }
+}
+body h2 {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  body h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+}
+body h3 {
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+@media (max-width: 768px) {
+  body h3 {
+    font-size: 22px;
+    margin-bottom: 18px;
+  }
+}
+body h4 {
+  font-weight: bold;
+  font-size: 26px;
+  margin-bottom: 22px;
+}
+@media (max-width: 768px) {
+  body h4 {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+}
+body h5 {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  body h5 {
+    font-size: 18px;
+    margin-bottom: 14px;
+  }
+}
+body h6 {
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+@media (max-width: 768px) {
+  body h6 {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+}
+body ul,
+body ol {
+  padding-left: 20px;
+  font-weight: normal;
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+body ul li,
+body ol li {
+  margin-bottom: 4px;
+}
+body ul {
+  list-style: disc inside;
+}
+body ol {
+  list-style: decimal inside;
+}
+body a {
+  color: #009dc4;
+}
+body a:hover {
+  text-decoration: underline;
+}
+body strong,
+body b {
+  font-weight: bold;
+}
+body em,
+body i {
+  font-style: italic;
+}
+body img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-weight: 20px;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*a, input, textarea, button {
+  @include animated();
+}*/
+.container {
+  font-family: "Open Sans";
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media (max-width: 1367px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+p {
+  line-height: 22px;
+}
+
+.navBar {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid gainsboro;
+}
+.navBar img {
+  width: 120px;
+  height: 40px;
+}
+.navBar div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.navBar div p {
+  margin: 0 5px;
+  padding: 5px;
+  min-width: 100px;
+  text-align: center;
+  border-radius: 5px;
+}
+.navBar div p a {
+  color: black;
+  text-decoration: none;
+}
+.navBar div p:hover {
+  border: 2px solid black;
+  cursor: pointer;
+}
+.navBar div p:hover a {
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.hamburger {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button-green {
+  color: white;
+  height: 40px;
+  background-image: linear-gradient(to left, #3045be, #88e7ff, #3045be);
+  background-size: 200%;
+  padding: 8px 24px 7px 24px;
+  border: none;
+  border-radius: 5px;
+  margin: 0 5px;
+  transition: 0.6s;
+  min-width: 100px;
+}
+
+.button-green:hover {
+  background-position: right;
+  color: black;
+}
+
+.button-blue {
+  color: black;
+  height: 40px;
+  background-image: linear-gradient(to left, #4cd137, #83ff93, #4cd137);
+  background-size: 200%;
+  transition: 0.6s;
+  padding: 8px 24px 7px 24px;
+  border: none;
+  border-radius: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.button-blue:hover {
+  background-position: right;
+  color: white;
+}
+
+.text-box {
+  text-align: center;
+  padding: 50px;
+  background-color: #ecf0f1;
+  box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.1);
+  color: black;
+  margin-bottom: 50px;
+}
+.text-box h2 {
+  font-family: "Open Sans";
+  color: #27ae60;
+  font-weight: normal;
+  margin-bottom: 21px;
+}
+
+body {
+  font-family: "Open Sans" !important;
+}
+
+.img-text-box {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-text-box div {
+  width: 575px;
+}
+.img-text-box div h2 {
+  font-weight: normal;
+  font-size: 40px !important;
+  color: red;
+  font-weight: 200 !important;
+}
+.img-text-box div p {
+  color: black;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.img-text-box figure {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.black-title {
+  font-weight: normal;
+  color: black;
+  margin-bottom: 0px;
+  line-height: 41px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.hamburger {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  top: 20px;
+  right: 20px;
+  padding: 4px;
+  border: 0px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.97);
+  cursor: pointer;
+}
+
+.closeIcon {
+  display: none;
+}
+
+.menu {
+  align-items: center;
+  display: none;
+  position: fixed;
+  transform: translateX(50vw);
+  transition: transform 0.5s;
+  top: 0;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background: black;
+  color: white;
+  list-style: none;
+  padding-top: 4rem;
+}
+
+.showMenu {
+  transform: translateX(0);
+}
+
+main {
+  margin-top: 80px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container1 {
+  width: 100vw;
+  height: 90vh;
+  position: relative;
+  margin-bottom: 50px;
+}
+.slideshow-container1 a {
+  font-size: 30px;
+}
+
+/* Hide the images by default */
+.mySlides1 {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+.mySlides1 img {
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.mySlides1 .black-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.mySlides1 .black-bg .title {
+  min-width: 1200px;
+  height: -moz-fit-content;
+  height: fit-content;
+  opacity: 80%;
+  animation: flipp 1s;
+  animation-fill-mode: forwards;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  transform: rotateX(90deg);
+}
+.mySlides1 .black-bg .title h1,
+.mySlides1 .black-bg .title h2 {
+  font-size: 50px;
+  margin: 0;
+  color: white;
+  font-weight: 300;
+  word-wrap: break-word;
+}
+.mySlides1 .black-bg .title p {
+  color: rgb(254, 254, 254);
+  font-weight: 100;
+}
+
+@keyframes flipp {
+  from {
+    transform: rotateX(90deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotateX(0deg);
+    opacity: 100%;
+  }
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px 13px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: higth;
+  animation-duration: 5s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 30%;
+  }
+  60% {
+    opacity: 60%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+.section-2 {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  margin-bottom: 50px;
+}
+.section-2 h2 {
+  line-height: 41px;
+  font-weight: normal;
+}
+.section-2 p {
+  margin-bottom: 20px;
+}
+.section-2 a {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.section-2 a button {
+  width: 170px;
+  margin: 0px 10px;
+}
+
+.section-3 {
+  background-image: url(/splash/img/bg-1919-1.jpg);
+}
+.section-3 figure {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-right: 50px;
+}
+
+.section-4 {
+  margin-bottom: 50px;
+}
+.section-4 .textContainer {
+  display: none;
+}
+.section-4 .textContainer p:nth-child(even) {
+  animation: trans 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes trans {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.section-4 .textContainer p:nth-child(odd) {
+  animation: trans2 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes trans2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animText {
+  height: 50px;
+  animation: inalPar 2s;
+}
+
+@keyframes inalPar {
+  to {
+    height: 0;
+    bottom: 0;
+  }
+  from {
+    height: 50px;
+    bottom: 50px;
+  }
+}
+.section-5 {
+  background-image: url(/splash/img/bg-1919-1.jpg);
+  flex-direction: row-reverse;
+}
+.section-5 figure {
+  margin-left: 50px;
+}
+.section-5 div {
+  text-align: right;
+}
+.section-5 div h2 {
+  font-size: 40px;
+}
+
+.section-7 .all-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 50px;
+}
+.section-7 .all-box div {
+  box-shadow: -1px 5px 36px -11px rgba(0, 0, 0, 0.48);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  min-height: 200px;
+  opacity: 100%;
+  padding: 20px;
+  border-radius: 10px;
+}
+.section-7 .all-box div img {
+  margin: 20px;
+}
+.section-7 .all-box div p {
+  color: black;
+}
+.section-7 .all-box div .new-item {
+  position: absolute;
+  color: #c0392b;
+  top: 10px;
+  right: 10px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.boxHover {
+  background: linear-gradient(35deg, rgb(244, 215, 0) 6%, rgb(255, 159, 3) 29%, rgb(241, 50, 0) 57%) !important;
+  box-shadow: none !important;
+}
+.boxHover .S {
+  animation: rotatie 2s;
+  transform: rotateX(0deg);
+}
+@keyframes rotatie {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(720deg);
+  }
+}
+.boxHover p {
+  animation: trans 0.5s;
+  animation-fill-mode: forwards;
+  color: white !important;
+}
+
+.stow {
+  animation: rotatie2 1s;
+  transform: rotateX(0deg);
+}
+
+@keyframes rotatie2 {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(-720deg);
+  }
+}
+.section-8 {
+  margin-bottom: 50px;
+  width: 100%;
+  height: 400px;
+  background-image: url(/splash/img/fixed.jpeg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
+}
+
+.textContainer2 {
+  display: none;
+  animation: trans 2s;
+  animation-fill-mode: forwards;
+}
+
+.section-9 .card {
+  width: 390px !important;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: aquamarine;
+  padding: 20px;
+  margin: 5px;
+  border-radius: 5px;
+}
+.section-9 .card figure img {
+  border-radius: 50%;
+}
+
+.section-10 h2 {
+  font-size: 40px;
+  font-weight: 300;
+}
+.section-10 .contact {
+  display: flex;
+  margin-bottom: 50px;
+  gap: 100px;
+}
+.section-10 .contact .map {
+  width: 500px;
+  box-shadow: -1px 5px 36px -11px rgba(0, 0, 0, 0.48);
+}
+.section-10 .contact .login-box {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.section-10 .contact .login-box .bbx {
+  display: flex;
+  flex-direction: column;
+}
+.section-10 .contact .login-box .bbx p {
+  margin: 20px 0;
+  color: black;
+}
+.section-10 .contact .login-box .bbx h3 {
+  margin: auto;
+  font-family: "Open Sans";
+  color: #27ae60;
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+.section-10 .contact .login-box .bbx .input {
+  all: unset;
+  border-bottom: 1px solid #27ae60;
+  width: 100%;
+}
+.section-10 .contact .login-box .bbx .qa {
+  height: 100px;
+}
+.section-10 .contact .login-box .bbx .youtext {
+  resize: none;
+  width: 100%;
+  border: 1px solid #27ae60;
+}
+.section-10 .contact .login-box .bbx button {
+  position: relative;
+  margin-top: 20px;
+  float: right;
+}
+
+footer {
+  height: 20%;
+}
+
+.section11 {
+  height: 100%;
+}
+.section11 .first-box {
+  display: flex;
+  justify-content: space-around;
+  color: rgb(255, 255, 255);
+  background: #000000;
+  padding: 30px;
+  height: 95%;
+  flex-wrap: wrap;
+}
+.section11 .first-box div {
+  min-width: 10% !important;
+}
+.section11 .first-box .item1 {
+  flex-grow: 1;
+}
+.section11 .first-box .item1 h3 {
+  font-weight: 200;
+}
+.section11 .first-box .item1 ul {
+  padding: 0;
+}
+.section11 .first-box .item1 ul li {
+  margin-bottom: 10px;
+  list-style-type: none;
+  color: rgb(119, 119, 119);
+}
+.section11 .first-box .item2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+.section11 .first-box .item2 p {
+  font-size: 25px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 5px;
+}
+.section11 .first-box .item3 {
+  flex-grow: 1;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #2c3e50;
+  max-width: 100px;
+}
+.section11 .second-box {
+  height: 5%;
+  background-color: #2c3e50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section11 .second-box p {
+  color: white;
+  margin: auto;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0px;
+  text-align: right;
+  width: 1200px;
+}
+
+@media (max-width: 1200px) {
+  .section-3 div h2 {
+    font-size: 26px;
+    margin-bottom: 17px;
+  }
+}
+.section-5 div h2 {
+  font-size: 26px;
+  margin-bottom: 17px;
+}
+
+.section11 .first-box .item3 {
+  text-align: center;
+}
+.section11 .second-box p {
+  margin-right: 20px;
+}
+
+@media (max-width: 1025px) {
+  .section-7 .all-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 800px) {
+  .navBar {
+    justify-content: flex-start;
+  }
+  .navBar .logo {
+    margin: 10px;
+    width: 200px;
+    height: 60px;
+  }
+  .navBar .tabs {
+    display: none;
+  }
+  .slideshow-container {
+    height: 400px;
+  }
+  .hamburger {
+    display: block;
+  }
+  .menu {
+    display: block;
+  }
+  .section-3 {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .section-3 figure {
+    margin: 0;
+  }
+  .section-5 {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .section-5 figure {
+    margin: 0;
+  }
+  .section-5 div {
+    text-align: center;
+  }
+  .section-10 .contact {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-10 .contact .map {
+    height: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .section-1 div h1 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 2000px) {
+  body {
+    background-color: white;
+  }
+  .manu {
+    display: none;
+  }
+}
+.faq {
+  margin-bottom: 50px;
+}
+.faq h2 {
+  font-size: 40px;
+  font-weight: 300;
+}
+.faq div div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(230, 229, 229);
+  border-radius: 50px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  padding: 10px 5px;
+}
+.faq div div h3 {
+  margin: 0;
+  color: black;
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: 300;
+}
+.faq div div button {
+  font-size: 20px;
+  background-color: white;
+  border: 0;
+  padding: 0;
+  margin-right: 20px;
+  border-radius: 50%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.faq div p {
+  margin-top: 20px;
+  margin-left: 10px;
+  display: none;
+  font-size: 20px;
+  color: rgb(132, 132, 132);
+}
+.faq div .boxShadow {
+  box-shadow: -5px 15px 15px rgba(131, 131, 131, 0.575) !important;
+  border: none;
+}
+.faq div .flipAnim {
+  animation: flip 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes flip {
+  to {
+    transform: rotateX(180deg);
+  }
+}
+.faq div .heightAnim {
+  animation: height 0.5s;
+  animation-fill-mode: forwards;
+}
+.faq div .flipAnim2 {
+  animation: flip2 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes flip2 {
+  from {
+    transform: rotateX(180deg);
+  }
+  to {
+    transform: rotateX(0deg);
+  }
+}
+.faq div .heightAnim {
+  animation: height 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes height {
+  from {
+    height: 0px;
+    color: white;
+  }
+  to {
+    height: 50px;
+    color: rgb(169, 169, 169);
+  }
+}
+.faq .heightAnim2 {
+  animation: height2 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes height2 {
+  from {
+    height: 50px;
+  }
+  to {
+    height: 0px;
+    color: white;
+    margin: 0;
+    opacity: 0%;
+  }
+}
+
+.logSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  background-image: url(/splash/img/frunzback.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.logSection .logInBox {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 40%;
+  background-color: white;
+  border-radius: 20px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  animation: heightL 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 85%;
+}
+.logSection .logInBox .blueLog {
+  width: 30%;
+  height: auto;
+  background-color: rgb(36, 194, 252);
+  border-radius: 20px 15px 15px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
+.logSection .logInBox .blueLog p {
+  opacity: 0%;
+  animation: opacL 0.5s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+.logSection .logInBox .rightBoxL {
+  width: 50%;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: "Courier New", monospace;
+  animation: opacL 0.5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.logSection .logInBox .rightBoxL h2 {
+  font-size: 50px;
+  color: rgb(4, 2, 52);
+  font-weight: 200;
+}
+.logSection .logInBox .rightBoxL input {
+  width: 100%;
+  margin-bottom: 20px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 56px 56px 56px 0px;
+  padding: 10px;
+}
+.logSection .logInBox .rightBoxL p {
+  font-size: 18px;
+  margin-bottom: -5px;
+  color: black;
+}
+.logSection .logInBox .rightBoxL button {
+  width: 100px;
+  margin: 0;
+  margin-top: 10px;
+}
+.logSection .signUpBox {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 40%;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  animation: heightL 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 85%;
+  position: absolute;
+  display: none;
+}
+.logSection .signUpBox .orangeLog {
+  cursor: pointer;
+  width: 30%;
+  height: auto;
+  background-color: rgb(21, 255, 0);
+  border-radius: 20px 15px 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.logSection .signUpBox .orangeLog p {
+  opacity: 0%;
+  animation: opacL 0.5s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+.logSection .signUpBox .rightBox {
+  width: 50%;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Courier New", monospace;
+  animation: opacL 0.5s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.logSection .signUpBox .rightBox h2 {
+  font-size: 50px;
+  color: rgb(4, 2, 52);
+  font-weight: 200;
+}
+.logSection .signUpBox .rightBox input {
+  width: 100%;
+  margin-bottom: 10px;
+  height: 30px;
+  border: 2px solid black;
+  border-radius: 56px 56px 56px 0px;
+  padding: 10px;
+}
+.logSection .signUpBox .rightBox p {
+  font-size: 18px;
+  margin: 0;
+  color: black;
+}
+.logSection .signUpBox .rightBox button {
+  width: 100px;
+  margin: 0;
+  margin-top: 10px;
+}
+@keyframes heightL {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 400px;
+  }
+}
+@keyframes opacL {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+.logSection .anim10 {
+  animation: heightL2 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes heightL2 {
+  from {
+    height: 400px;
+  }
+  to {
+    height: 0px;
+  }
+}
+.logSection .hed {
+  display: none;
+}
+.logSection .acc {
+  display: none;
+}
+.logSection .homepg {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 20px;
+  color: rgb(35, 98, 137);
+}
+.logSection .homepg:hover a {
+  color: rgb(60, 232, 48);
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,15 @@
+{
+  "folders": [
+	{
+		"name": "Splash",
+		"path": ".."
+	},
+	{
+		"name": "includes",
+		"path": "../../Splash project/sass/includes"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Splash"
+  }
+}

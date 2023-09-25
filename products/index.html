@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Splash</title>
+    <link rel="stylesheet" href="index copy.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <!--nav bar-->
+    <ul class="menu">
+      <li>
+        <p>
+          <b><a href="/splash/index.html" class="menuItem">Home</a></b>
+        </p>
+      </li>
+      <li>
+        <p>
+          <b><a href="/products/index.html" class="products">Products</a></b>
+        </p>
+      </li>
+      <li>
+        <p>
+          <b><a href="#contact" class="aboutus">Contact-Us</a></b>
+        </p>
+      </li>
+      <li>
+        <a href="/Game/index.html"
+          ><button class="button-green" href="/Game/index.html">
+            PLAY GAME
+          </button></a
+        >
+      </li>
+      <li>
+        <button class="button-green">LOGIN</button>
+      </li>
+    </ul>
+    <button class="hamburger">
+      <!-- material icons https://material.io/resources/icons/ -->
+      <i class="menuIcon material-icons">menu</i>
+      <i class="closeIcon material-icons">close</i>
+    </button>
+    <nav class="navBar">
+      <a
+        ><img
+          src="/products/img/logo-splash-osim-rgb2 1.png"
+          alt="logo-splash"
+          class="logo"
+        />
+      </a>
+
+      <div class="secrchBox">
+        <input type="text" placeholder="Search.." name="" id="" />
+        <button class="secrchBtn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <div class="tabs">
+        <p>
+          <b
+            ><a href="/splash/index.html" class="home"
+              ><i class="fa-solid fa-house"></i></a
+          ></b>
+        </p>
+        <p>
+          <b
+            ><a href="/splash/index.html" class="home"
+              ><i class="fa-solid fa-cart-shopping"></i></a
+          ></b>
+        </p>
+        <p class="inima">
+          <b
+            ><a href="/splash/index.html" class="home"
+              ><i class="fa-solid fa-heart"></i></a
+          ></b>
+        </p>
+      </div>
+    </nav>
+    <section class="filters">
+      <div id="fil-1"><a>Trotinete electrice</a></div>
+      <div id="fil-2"><a>Echipamente de protectie</a></div>
+      <div id="fil-3"><a>Accesorii</a></div>
+    </section>
+
+    <main>
+      <section class="container">
+        <div id="prod_title"></div>
+        <div id="products" class="products"></div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

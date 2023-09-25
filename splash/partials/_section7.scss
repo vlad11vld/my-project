@@ -1,0 +1,80 @@
+.section-7 {
+  .all-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: $margin-section;
+
+    div {
+      -webkit-box-shadow: -1px 5px 36px -11px rgba(0, 0, 0, 0.48);
+      -moz-box-shadow: -1px 5px 36px -11px rgba(0, 0, 0, 0.48);
+      box-shadow: -1px 5px 36px -11px rgba(0, 0, 0, 0.48);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: white;
+      min-height: 200px;
+
+      opacity: 100%;
+      padding: 20px;
+      border-radius: 10px;
+      img {
+        margin: 20px;
+      }
+      p {
+        color: black;
+      }
+      .new-item {
+        position: absolute;
+        color: $blood-red;
+        top: 10px;
+        right: 10px;
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+  }
+}
+.boxHover {
+  .S {
+    animation: rotatie 2s;
+
+    transform: rotateX(0deg);
+  }
+  @keyframes rotatie {
+    from {
+      transform: rotateZ(0deg);
+    }
+    to {
+      transform: rotateZ(720deg);
+    }
+  }
+  background: linear-gradient(
+    35deg,
+    rgba(244, 215, 0, 1) 6%,
+    rgba(255, 159, 3, 1) 29%,
+    rgba(241, 50, 0, 1) 57%
+  ) !important;
+  box-shadow: none !important;
+  p {
+    animation: trans 0.5s;
+    animation-fill-mode: forwards;
+    color: white !important;
+  }
+}
+
+.stow {
+  animation: rotatie2 1s;
+
+  transform: rotateX(0deg);
+}
+@keyframes rotatie2 {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(-720deg);
+  }
+}

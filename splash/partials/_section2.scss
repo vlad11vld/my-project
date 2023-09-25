@@ -1,0 +1,22 @@
+.section-2 {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $dark-text;
+  margin-bottom: $margin-section;
+  h2 {
+    line-height: 41px;
+    font-weight: normal;
+  }
+  p {
+    margin-bottom: $margin-titles;
+  }
+  a {
+    height: fit-content;
+    button {
+      width: 170px;
+      margin: 0px 10px;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.section-4 {
+  margin-bottom: $margin-section;
+  .textContainer {
+    display: none;
+    p:nth-child(even) {
+      animation: trans 2s;
+      animation-fill-mode: forwards;
+    }
+    @keyframes trans {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    p:nth-child(odd) {
+      animation: trans2 2s;
+      animation-fill-mode: forwards;
+    }
+    @keyframes trans2 {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  }
+}
+.animText {
+  height: 50px;
+  animation: inalPar 2s;
+}
+@keyframes inalPar {
+  to {
+    height: 0;
+    bottom: 0;
+  }
+  from {
+    height: 50px;
+    bottom: 50px;
+  }
+}

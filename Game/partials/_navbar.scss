@@ -1,0 +1,17 @@
+.navBar {
+  height: 80px;
+  display: flex;
+  justify-content: flex-end;
+
+  a {
+    margin: 10px 20px;
+    font-size: 40px;
+    color: lawngreen;
+    p {
+      margin: 0;
+    }
+  }
+}
+a:hover{
+    color: green;
+}

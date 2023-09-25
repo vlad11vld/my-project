@@ -1,0 +1,13 @@
+.section-5 {
+  background-image: url(/splash/img/bg-1919-1.jpg);
+  flex-direction: row-reverse;
+  figure {
+    margin-left: $margin-section;
+  }
+  div {
+    text-align: right;
+    h2 {
+      font-size: 40px;
+    }
+  }
+}
